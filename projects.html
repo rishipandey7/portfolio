@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+
+   {% include 'nav.html' %}
+   
+   <style>  
+
+    nav {
+      word-spacing: 50px;
+        height: 100px;
+    line-height: 100px;
+    }
+    .card-content
+    {
+      font-size: 19px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+      font-style: italic;
+    }
+         
+    </style>
+    
+       <br>
+       <h1 class="center-align">Projects</h1>
+       <br>
+       
+<div class="container">
+         <div class="row">
+           <div class="col s12 m6">
+            <div class="card grey lighten-5">
+              <div class="card-content grey-text text-darken-2">
+                <br>
+                <span class="card-title"><b>Why projects?</b></span>
+                <br>
+                <p>"Projects can be one of the most efficient ways to learn as they force you to apply the skills while learning them. This, in fact, aids in retention and increases the usefulness of the skills learned.Beyond simply helping you to learn skills projects allow you to produce something. This thing can be a useful open source project, or something silly to tell people if its snowing. Not only do they allow you to make something cool, but they allow you to showcase your skills in such a way that people who might want to work with you or hire you.You project allow you to learn and gain recognition for yourself. They are one of the most powerful tools in your arsenal of things to do with your time. So as you look to the week ahead, perhaps consider creating or working on a side project."</p>
+              </div>
+             
+            </div>
+           </div>   
+           <div class="col s12 m6">
+             <ul class="collapsible popout">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">description</i>Portfolio Website</div>
+                  <div class="collapsible-body"><span>A portfolio website is a unique way to showcase your work and let others know about yourself. It’s like an evergreen platform for your projects, case studies, and information about you. In addition, it’s one of the best ways to express your personality, experience, and capabilities.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">chrome_reader_mode</i>Blog Application</div>
+                  <div class="collapsible-body"><span>A blog is an online journal or informational website displaying information in the reverse chronological order, with the latest posts appearing first. It is a platform where a writer or even a group of writers share their views on an individual subject.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">assessment</i>Polling Application</div>
+                  <div class="collapsible-body"><span>Polling application is basically the Collect and visualize audience feedback in real time with a variety of activity types including multiple choice, word clouds, and Q&As.It can also be used in everyday works like attendance, give quizzes, and gauge understanding whether your students are near or far.</span></div>
+                </li>
+                 
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">dvr</i>Student Management API</div>
+                  <div class="collapsible-body"><span>Running an organization is much difficult nowadays especially those organization having a lot of members like a school or a training institute student management application help such organizations to manage the system these application equiped with day-to-day support, information related to institute, management of accounts, exams and assessments details and much more.</span></div>
+                </li>
+
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">insert_emoticon</i>Emojifier</div>
+                  <div class="collapsible-body"><span>If we wanna make text more expressive than emojifier will help us so rather then writing the whole text we just put an emoji that means exactly same as the given text.Emojis are nowadays very popular hence make it more significant.</span></div>
+                </li>
+
+               </ul> 
+  </div>
+  </div>
+</div>
+
+
+
+{% include 'main/footer.html' %}
+{% endblock %}   
+
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+});
+</script>
+
+{% endblock %}

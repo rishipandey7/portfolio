@@ -1,0 +1,386 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% include 'nav.html' %}
+  
+  <style>
+
+     body {
+      background-image: url('http://lorempixel.com/output/city-q-g-1860-860-10.jpg');
+      margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+     }
+.center
+  {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    }
+
+    #down_center{
+      width: 70%;
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+
+    }
+
+    
+    #down_down_center{
+      width: 70%;
+    position: absolute;
+    top: 270%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+
+    }
+
+    
+    #down_down_down_center{
+      width: 70%;
+    position: absolute;
+    top: 380%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+
+    }
+
+
+     
+   
+
+    .below_center
+    {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+    
+      top: 520px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     }
+     .below_below_center
+     {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+      top: 1413px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     } 
+
+
+     .below_below_below_center
+     {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+      top: 2280px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     } 
+
+     
+     
+     .below_below_below_below_center
+     {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+      top: 3125px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     } 
+
+     
+     
+     
+
+     
+h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.skillbox
+{
+    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.down_skillbox
+{
+    
+    position: absolute;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.down_skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.down_skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.down_skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+
+
+
+
+
+.down_down_skillbox
+{
+    
+    position: absolute;
+    top: 290%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.down_down_skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.down_down_skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.down_down_skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+
+
+
+
+.down_down_down_skillbox
+{
+    
+    position: absolute;
+    top: 405%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.down_down_down_skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.down_down_down_skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.down_down_down_skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+</style>
+  
+  <div class="center">
+    <h1>C
+      <br><br>90%
+    </h1>
+    </div>
+    <div class="skillbox">
+        <div class="skill">
+        <div class="skill_level" style="width: 90%"></div>
+    </div>
+</div>
+<div class="below_center">
+  <p><b>" C is a general-purpose programming language that is extremely popular, simple and flexible. It is machine-independent, structured programming language which is used extensively in various applications. It is said that 'C' is a god's programming language. One can say, C is a base for the programming. If you know 'C,' you can easily grasp the knowledge of the other programming languages that uses the concept of 'C' "</p>
+
+  </div>  
+
+
+  <div class="center" id="down_center">
+    <h1>C++
+      <br><br>95%</h1>
+    </div>
+    <div class="down_skillbox">
+        <div class="down_skill">
+        <div class="down_skill_level" style="width: 95%"></div>
+    </div>
+</div>
+<div class="below_below_center">
+  <p><b>"  C++ is undoubtedly one of the oldest and most efficient programming languages that still continues to dominate the realm of programming. Every beginner is curious to know the Advantages and Disadvantages of C++ on the basis of which they can start their programming journey. Benefits and limitations are important to know to predict their next step.  "</p>
+
+  </div>  
+
+
+
+  <div class="center" id="down_down_center">
+    <h1>Java
+      <br><br>80%</h1>
+    </div>
+    <div class="down_down_skillbox">
+        <div class="down_down_skill">
+        <div class="down_down_skill_level" style="width: 80%"></div>
+    </div>
+</div>
+<div class="below_below_below_center">
+  <p><b>"  Java is one of the most popular programming languages used to create Web applications and platforms. It was designed for flexibility, allowing developers to write code that would run on any machine, regardless of architecture or platform. According to the Java home page, more than 1 billion computers and 3 billion mobile phones worldwide run Java. "</p>
+
+  </div>  
+
+
+
+  <div class="center" id="down_down_down_center">
+    <h1>Python
+      <br><br>90%</h1>
+    </div>
+    <div class="down_down_down_skillbox">
+        <div class="down_down_down_skill">
+        <div class="down_down_down_skill_level" style="width: 90%"></div>
+    </div>
+</div>
+<div class="below_below_below_below_center">
+  <p><b>"  Python supports the use of modules and packages, which means the programs will design in module style and code can be decreased according to the project. Once you developed a package or module, this can use in another project also if we need an easy to export and import these modules. One of the most favorable benefits through Python is interpreter and standard libraries both are available for a free charge, both binary and source form.  "</p>
+
+  </div>  
+
+{% endblock %}  

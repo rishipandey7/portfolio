@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+  {% include 'nav.html' %}
+ 
+
+<style>  
+
+nav {
+  word-spacing: 50px;
+    height: 100px;
+line-height: 100px;
+}
+#last-card
+{
+  font-style: italic;
+}
+#last-card p
+{
+  font-size: medium;
+}
+     
+</style>
+    <div class="container">
+      <br>
+      <h1 class='center-align'>About me</h1>
+      <br>
+      <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed responsive-img"  src="https://scontent.fdel8-1.fna.fbcdn.net/v/t31.0-1/p480x480/30425643_584442905287777_8780723569956098231_o.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_oc=AQknA0ChfzrscdQHPs44cZSaBbU6ZaDAnyNnyt4hH3LMcCdUvoCXGOyVjSILvGZINo8&_nc_ht=scontent.fdel8-1.fna&_nc_tp=6&oh=c6b769ce6eb63043696d60b6f5e9bcda&oe=5E9C8DE7">
+      
+                <span class="card-title">Rishi Pandey</span>
+                </div>
+                <div class="card-content grey-text text-darken-2">
+                  <p>I am Rishi a student of Computer Science Engineering, currently working as a freelancer and intend to pursue my career in core computer science.</p>
+                </div>
+                <div class="card-action grey-text">
+                  <a class="grey-text text-dark-3" href="https://github.com/rishipandey7">Github</a>
+                  <a class="grey-text text-dark-3" href="https://www.linkedin.com/in/rishi-pandey-4476a2179">Linkdin</a>
+                </div>
+                </div>
+            </div>
+          <div class="col s12 m8">
+            <div class="card grey lighten-5">
+                <div class="card-content grey-text text-darken-2" id="last-card">
+                  <span class="card-title"><b>Why Computer Science ?</b></span>
+                  <br>
+                  <p>"Computer science is the field of potential outcomes.The discipline of computer science includes the study of algorithms and data structures, computer and network design, modeling data and information processes, and artificial intelligence. Computer science draws some of its foundations from mathematics and engineering and therefore incorporates techniques from areas such as queueing theory, probability and statistics, and electronic circuit design. Computers allow a business to perform a variety of tasks. For starters, with the help of the internet, computers help put a business on the map. With a computer, a business’s team of IT developers can create a professional website complete with enticing graphics and content with different forms of media, such as text, images, and videos. Accounting is a function in which accuracy is of the utmost importance. When you perform accounting functions – and you have nothing nothing except pen and paper - and you're relying solely on brain power, you expose yourself to errors. Accounting software helps prevent that from happening.Businesses have come a long way from the era of filing cabinets thanks to computers. Although a filing cabinet will occupy a very large space but will store only a small amount of information, a computer will occupy only a fraction of that space but it will store thousands of times the amount of information. With computers and servers, businesses are able to store and sort millions of files, to enable the business to access at any time."</p>
+                </div>
+          </div>
+      </div>
+     </div>
+    </div>
+    {% include 'main/footer.html'%}
+  
+
+{% endblock %}
+{% block script %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+</script>
+
+{% endblock %}

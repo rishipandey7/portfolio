@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% include 'nav.html' %}
+  
+  <style>
+
+     body {
+      background-image: url('http://lorempixel.com/output/city-q-g-1860-860-10.jpg');
+      margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+     }
+.center
+  {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    }
+
+    #down_center{
+      width: 70%;
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+
+    }
+    .below_center
+    {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+    
+      top: 520px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     }
+     .below_below_center
+     {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+      top: 1413px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     } 
+
+
+     
+h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.skillbox
+{
+    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.down_skillbox
+{
+    
+    position: absolute;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.down_skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.down_skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.down_skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+</style>
+  
+  <div class="center">
+    <h1>Data Structures
+      <br><br>90%
+    </h1>
+    </div>
+    <div class="skillbox">
+        <div class="skill">
+        <div class="skill_level" style="width: 90%"></div>
+    </div>
+</div>
+<div class="below_center">
+  <p><b>"  Data structure is a process through which data is stored and arranged in the disk space of the  computer or memory storage, in a way that the data can be easily used and manipulated in the future. It is an effective way of performing various operations related to data management. With a sufficient understanding of data structure data can be organized and stored in a proper manner. Data structures are designed to organize data in order to suit specific purposes so as to access and perform operations in an appropriate manner.   "</p>
+
+  </div>  
+
+
+  <div class="center" id="down_center">
+    <h1>Algorithms
+      <br><br>80%</h1>
+    </div>
+    <div class="down_skillbox">
+        <div class="down_skill">
+        <div class="down_skill_level" style="width: 80%"></div>
+    </div>
+</div>
+<div class="below_below_center">
+  <p><b>"  Algorithms are very important in computer Science. The best chosen algorithm makes sure computer will do the given task at best possible manner. In cases where efficiency matter a proper algorithm is really vital to be used. An algorithm is important in optimizing a computer program according to the available resources.  .
+
+    Ultimately when anyone decide to solve a problem through better algorithms then searching for  the best combination of program speed and least amount of memory consumption is desired.    "</p>
+
+  </div>  
+
+
+
+{% endblock %}  

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+
+   {% include 'nav.html' %}
+   
+   <style>  
+
+    nav {
+      word-spacing: 50px;
+        height: 100px;
+    line-height: 100px;
+    }
+         
+    </style>
+    
+   <div class="parallax-container">
+    <div class="parallax"><img src="http://lorempixel.com/output/city-q-g-1101-892-9.jpg"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Languages </h2>
+      <ul class="collapsible expandable">
+        <li>
+          <div class="collapsible-header">C</div>
+          <div class="collapsible-body"><span>C is a procedural programming language.It was mainly developed as a system programming language to write an operating system. The main features of C language include low-level access to memory, a simple set of keywords, and clean style, these features make C language suitable for system programmings like an operating system or compiler development.</span></div>
+        </li>
+        <p>
+
+        </p>
+        <li>
+          <div class="collapsible-header">C++</div>
+          <div class="collapsible-body"><span>C++ is a general-purpose programming language that was developed as an enhancement of the C language to include object-oriented paradigm. It is an imperative and a compiled language.It is a simple language in the sense that programs can be broken down into logical units and parts, has a rich libray support and a variety of data-types.One of the strongest points of the language which sets it apart from C. Object-Oriented support helps C++ to make maintainable and extensible programs.</span></div>
+        </li>
+        <p>
+
+        </p>
+        <li>
+          <div class="collapsible-header">Python</div>
+          <div class="collapsible-body"><span>Python is currently the most widely used multi-purpose, high-level programming language.
+            Python allows programming in Object-Oriented and Procedural paradigms.
+            Python programs generally are smaller than other programming languages like Java. Programmers have to type relatively less and indentation requirement of the language, makes them readable all the time.The biggest strength of Python is huge collection of standard library.</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="http://lorempixel.com/output/city-h-g-891-892-4.jpg"></div>
+  </div>
+      
+  
+  {% include 'main/footer.html' %}
+
+
+{% endblock %}   
+
+
+{% block script %}
+<script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+
+</script>
+
+{% endblock %}

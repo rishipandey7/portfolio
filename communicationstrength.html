@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% include 'nav.html' %}
+  
+  <style>
+
+     body {
+      background-image: url('http://lorempixel.com/output/city-q-g-1860-860-10.jpg');
+      margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+     }
+.center
+  {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    }
+    .below_center
+    {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+    
+      top: 520px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     }
+     
+
+
+     
+h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.skillbox
+{
+    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+</style>
+  
+  <div class="center">
+    <h1>Communication Skill
+      <br><br>90%
+    </h1>
+    </div>
+    <div class="skillbox">
+        <div class="skill">
+        <div class="skill_level" style="width: 90%"></div>
+    </div>
+</div>
+<div class="below_center">
+  <p><b>" Communication skills are needed to speak appropriately with a wide variety of people whilst maintaining good eye contact, demonstrate a varied vocabulary and tailor your language to your audience, listen effectively, present your ideas appropriately, write clearly and concisely, and work well in a group "</p>
+  </div>  
+
+{% endblock %}  

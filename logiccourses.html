@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% include 'nav.html' %}
+
+<style>
+ body {
+      background-image: url('http://lorempixel.com/output/city-q-g-1860-860-10.jpg');
+      margin: 0;
+    padding: 0;
+     }
+
+  .center
+  {
+    width: 55%;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    height: 550px;
+    color: #616161;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+};
+  
+
+  .in_center
+  {
+     margin: 30px;
+     height: 400px;
+
+   }
+   
+   .material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
+.row{
+    font-size: 17px;
+    
+}
+
+</style>
+
+
+<div class="center">
+    <h3>Courses</h3>
+    <br>
+    <div class="in_center">
+        <h5>Advanced Data Structures And Algorithms In C++</h5>
+        <h5><b>Coding Blocks</b></h5>
+        <br>
+        <br>
+        <div class="row"> 
+        <div class="col l6 s12">
+          <div>
+            <span><i class="small material-icons">today</i>    June 2019 - July 2019</span>
+          </div>
+        </div>
+        <div class="col l6 s12">
+            
+            <div>
+                <a class="grey-text text-darken-2" href="https://www.google.com/maps/place/Coding+Blocks/@28.6969421,77.1401938,17z/data=!3m1!4b1!4m5!3m4!1s0x390d031a56eddeaf:0x43fff07d28e13b1c!8m2!3d28.6969421!4d77.1423825"><i class="small material-icons">place</i> Delhi, India</a>
+              </div>
+            <br>
+            <br>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+            The course involve rigorous practice of questions based on Sorting, Searching, Greedy Algorithms, Divide and Conquer Algorithms, Dynamic Programming along with comprehensive revision of data structures like linked-lists, Trees, Graphs, Heaps, Hashing.
+            Here I Learned about the fundamental concepts of data structures and algorithms and also
+            achiveded a good position on hackerblocks an online stage for improving coding skills.
+                
+            </div>
+  
+</div>
+
+
+{% endblock %}  

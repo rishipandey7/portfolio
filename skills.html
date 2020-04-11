@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% include 'nav.html' %}
+ 
+<style type="text/css">
+    html, body, .block {
+      height: 100%;
+    }
+    nav ul li a:hover, nav ul li a.active {
+      background-color: rgba(0,0,0,.1);
+    }
+    footer {
+      padding-left: 0;
+    }
+    #firstdiv
+    {
+        margin: auto;
+  width: 50%;
+  height: 500px;
+  color:linen;
+  padding: 10px; 
+  font-family: 'sabonroman';
+  font-size: 22px;
+  }
+  #seconddiv
+  {
+    margin: auto;
+  width: 50%;
+  height: 500px;
+  padding: 10px; 
+  font-family: 'sabonroman';
+  font-size: 22px;
+      color:white;
+  }
+#helpdiv
+{
+    color:white;
+    font-size: 20px;
+ 
+}
+</style>
+
+  <div id="blue-grey darken-1" class="block blue-grey darken-1">
+    <nav class="pushpin-demo-nav " data-target="blue-grey darken-1">
+      <div class="nav-wrapper blue-grey darken-1">
+        <div class="container">
+          <a class="brand-logo">Logic building</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'logicstrength' %}">Strength</a></li>
+            <li><a href="{% url 'logiccourses' %}">Courses</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="firstdiv">
+        <br><br><br><br>Logical thinkers observe and analyze phenomena,<br> reactions, and feedback and then draw conclusions<br> based on that input. They can justify their strategies,<br>actions, and decisions based on the facts they gather.
+        <div id="helpdiv">
+        <br><br><br><br>"Logical thinkers don't go with their gut or develop a strategy because <br>it "feels right." Logical thinking also requires setting aside assumptions and biases."   
+    </div>
+    </div>
+  </div>
+  
+  <div id="block blue-grey lighten-1" class="block  block blue-grey lighten-1">
+    <nav class="pushpin-demo-nav" data-target="block blue-grey lighten-1">
+      <div class="nav-wrapper block blue-grey lighten-1">
+        <div class="container">
+          <a class="brand-logo">Programming</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'programmingstrength' %}">Strength</a></li>
+            <li><a href="{% url 'programmingcourses' %}">Courses</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="firstdiv">
+        <br><br><br><br>Computer programmers have a full understanding<br> of the how and why of computer systems, including<br> system limitations, and can set realistic expectations<br> and work around those limitations to fully maximize the<br> use of the equipment and its accessories.
+       <br><br><br>Programming is a platform to showcase creativity,<br> especially in problem-solving and entertainment. Programming<br> develops new video games, graphics and animations to showcase<br> new business ideas or to resolve a particular problem.
+  </div>
+    </div>
+  
+
+
+  <div id=" blue-grey lighten-2" class="block blue-grey lighten-2">
+    <nav class="pushpin-demo-nav" data-target="blue-grey lighten-2">
+      <div class="nav-wrapper  blue-grey lighten-2">
+        <div class="container">
+          <a class="brand-logo">Technical Skills</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'technicalstrength' %}">Strength</a></li>
+            <li><a href="{% url 'technicalcourses' %}">Courses</a></li></ul>
+        </div>
+      </div>
+    </nav>
+    <div id="firstdiv">
+        <br><br><br><br>Technology is gradually infiltrating every part<br> of our work and it’s likely to continue to do so in the future.<br> It is helping to automate manual tasks, so processes run<br> more efficiently, it enables us to make intelligent decisions<br> faster, and much more.
+        <br><br><br>These technology developments mean that technical skills<br> are not just a requirement for those employees who have<br> a technical job. Technical skills are increasingly important<br> for everyone, regardless of industry or job role.
+  </div>
+  </div>
+
+
+   
+  <div id=" blue-grey lighten-3" class="block blue-grey lighten-3">
+    <nav class="pushpin-demo-nav" data-target="blue-grey lighten-3">
+      <div class="nav-wrapper  blue-grey lighten-3">
+        <div class="container">
+          <a class="brand-logo">Communication</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'communicationstrength' %}">Strength</a></li>
+            <li><a href="{% url 'communicationcourses' %}">Courses</a></li></ul>
+        </div>
+      </div>
+    </nav>
+    <div id="seconddiv">
+        <br><br><br><br>Effective Communication is significant for managers<br> in the organizations so as to perform the basic functions of<br> management, i.e., Planning, Organizing, Leading and Controlling.<br><br>
+
+        Communication helps managers to perform their jobs<br> and responsibilities. Communication serves as a foundation<br> for planning. All the essential information must be<br> communicated to the managers who in-turn must communicate<br> the plans so as to implement them. Organizing also requires<br> effective communication with others about their job task.<br> Similarly leaders as managers must communicate effectively with<br> their subordinates so as to achieve the team goals.<br> Controlling is not possible without written and oral communication.
+        
+        <div id="helpdiv">
+            <br><br>“Effective communication is a building block of successful organizations”
+            </div>
+    
+
+    </div>
+    
+  </div>
+
+
+  {% include 'main/footer.html' %}
+
+  {% endblock %}
+  {% block script %}
+  <script type="text/javascript">
+    $('.pushpin-demo-nav').each(function() {
+      var $this = $(this);
+      var $target = $('#' + $(this).attr('data-target'));
+      $this.pushpin({
+        top: $target.offset().top,
+        bottom: $target.offset().top + $target.outerHeight() - $this.height()
+      });
+    });
+
+
+  </script>
+  {% endblock %}
+

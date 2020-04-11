@@ -1,0 +1,387 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% include 'nav.html' %}
+  
+  <style>
+
+     body {
+      background-image: url('http://lorempixel.com/output/city-q-g-1860-860-10.jpg');
+      margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+     }
+.center
+  {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    }
+
+    #down_center{
+      width: 70%;
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+
+    }
+
+    
+    #down_down_center{
+      width: 70%;
+    position: absolute;
+    top: 270%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+
+    }
+
+    
+    #down_down_down_center{
+      width: 70%;
+    position: absolute;
+    top: 380%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+
+    }
+
+
+     
+   
+
+    .below_center
+    {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+    
+      top: 520px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     }
+     .below_below_center
+     {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+      top: 1413px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     } 
+
+
+     .below_below_below_center
+     {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+      top: 2280px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     } 
+
+     
+     
+     .below_below_below_below_center
+     {
+      width: 60%;
+      background: fixed;
+      left: 380px;
+      color: #FFFFFF;
+      top: 3125px;
+      font-size: 25px;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: absolute;
+     } 
+
+     
+     
+     
+
+     
+h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.skillbox
+{
+    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.down_skillbox
+{
+    
+    position: absolute;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.down_skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.down_skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.down_skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+
+
+
+
+
+.down_down_skillbox
+{
+    
+    position: absolute;
+    top: 290%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.down_down_skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.down_down_skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.down_down_skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+
+
+
+
+.down_down_down_skillbox
+{
+    
+    position: absolute;
+    top: 405%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px 0;;
+}
+
+.down_down_down_skillbox p
+{
+   
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+}
+
+.down_down_down_skill
+{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;  
+    border-radius: 2px;
+
+}
+
+.down_down_down_skill_level
+{
+   background: #D3D3D3;
+   width: 100%;
+   height: 10px;
+
+}
+
+</style>
+  
+  <div class="center">
+    <h1>HTML
+      <br><br>90%
+    </h1>
+    </div>
+    <div class="skillbox">
+        <div class="skill">
+        <div class="skill_level" style="width: 90%"></div>
+    </div>
+</div>
+<div class="below_center">
+  <p><b>" HTML stands for Hyper Text Markup Language. It is used to design web pages using markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages. Markup language is used to define the text document within tag which defines the structure of web pages. HTML is used to annotate (make notes for the computer) text so that a machine can understand it and manipulate text accordingly.  "</p>
+
+  </div>  
+
+
+  <div class="center" id="down_center">
+    <h1>CSS
+      <br><br>95%</h1>
+    </div>
+    <div class="down_skillbox">
+        <div class="down_skill">
+        <div class="down_skill_level" style="width: 95%"></div>
+    </div>
+</div>
+<div class="below_below_center">
+  <p><b>"  Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows us to apply styles to web pages. More importantly, CSS enables us to do this independent of the HTML that makes up each web page.
+    CSS is easy to learn and understood but it provides powerful control over the presentation of an HTML document. "</p>
+
+  </div>  
+
+
+
+  <div class="center" id="down_down_center">
+    <h1>JavaScript
+      <br><br>80%</h1>
+    </div>
+    <div class="down_down_skillbox">
+        <div class="down_down_skill">
+        <div class="down_down_skill_level" style="width: 80%"></div>
+    </div>
+</div>
+<div class="below_below_below_center">
+  <p><b>" JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities. "</p>
+
+  </div>  
+
+
+
+  <div class="center" id="down_down_down_center">
+    <h1>Django
+      <br><br>85%</h1>
+    </div>
+    <div class="down_down_down_skillbox">
+        <div class="down_down_down_skill">
+        <div class="down_down_down_skill_level" style="width: 85%"></div>
+    </div>
+</div>
+<div class="below_below_below_below_center">
+  <p><b>" Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.It takes care of much of the hassle of Web development, so we can focus on writing our app without needing to reinvent the wheel.  "</p>
+
+  </div>  
+
+{% endblock %}  
